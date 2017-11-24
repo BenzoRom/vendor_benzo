@@ -4,6 +4,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
 # Packages/Overlays
 PRODUCT_PACKAGES += \
+    BuiltInPrintServiceOverlay \
     PixelDocumentsUIGoogleOverlay
 
 # Google fonts
