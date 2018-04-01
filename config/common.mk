@@ -12,6 +12,10 @@ PRODUCT_PACKAGES += \
     Terminal \
     WeatherIcons
 
+# Fonts packages
+PRODUCT_PACKAGES += \
+    invictrix-fonts
+
 # Props
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \

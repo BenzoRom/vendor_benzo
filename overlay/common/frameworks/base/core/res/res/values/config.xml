@@ -59,4 +59,9 @@
         <item>com.google.android.deskclock</item>
     </string-array>
 
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.invictrix.fonts</item>
+    </string-array>
+
 </resources>
