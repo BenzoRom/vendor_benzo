@@ -20,10 +20,10 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=marlin \
-    PRIVATE_BUILD_DESC="marlin-user 9 PPR2.181005.003.A1 5108978 release-keys"
+    PRIVATE_BUILD_DESC="marlin-user 9 PQ1A.181205.002.A1 5129870 release-keys"
 
-BUILD_FINGERPRINT="google/marlin/marlin:9/PPR2.181005.003.A1/5108978:user/release-keys"
-BUILD_THUMBPRINT="9/PPR2.181005.003.A1/5108978:user/release-keys"
+BUILD_FINGERPRINT="google/marlin/marlin:9/PQ1A.181205.002.A1/5129870:user/release-keys"
+BUILD_THUMBPRINT="9/PQ1A.181205.002.A1/5129870:user/release-keys"
 
 # Copy device specific prebuilt files.
 PRODUCT_COPY_FILES += \
