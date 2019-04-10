@@ -14,10 +14,14 @@
 # limitations under the License.
 #
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/benzo_crosshatch.mk \
     $(LOCAL_DIR)/benzo_marlin.mk \
     $(LOCAL_DIR)/benzo_sailfish.mk
 
 COMMON_LUNCH_CHOICES := \
+    benzo_crosshatch-userdebug \
+    benzo_crosshatch-user \
+    benzo_crosshatch-eng \
     benzo_marlin-userdebug \
     benzo_marlin-user \
     benzo_marlin-eng \
