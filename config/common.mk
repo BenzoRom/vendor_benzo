@@ -17,14 +17,14 @@ PRODUCT_PACKAGES += \
     invictrix-fonts
 
 # Props
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.selinux=1 \
     ro.actionable_compatible_property.enabled=false \
     ro.com.android.prov_mobiledata=false \
     debug.performance.tuning=1 \
     keyguard.no_require_sim=true
 #DL Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     aaudio.dl_scheduler=true
 
 # Copy hiddenapi whitelist

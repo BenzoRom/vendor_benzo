@@ -12,7 +12,7 @@ ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
 ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
 BENZO_VERSION := $(ROM_VERSION)
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.benzo.version=$(ROM_VERSION)
 
 # DragonTC info
@@ -21,5 +21,5 @@ DRAGONTC_VERSION := 9.0
 DTC_PATH := prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)
 DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.clang.version=$(DTC_VER)
