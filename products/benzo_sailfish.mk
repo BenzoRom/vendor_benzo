@@ -20,10 +20,10 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=sailfish \
-    PRIVATE_BUILD_DESC="sailfish-user 9 PQ3A.190505.001 5373320 release-keys"
+    PRIVATE_BUILD_DESC="sailfish-user 9 PQ3A.190605.003 5524043 release-keys"
 
-BUILD_FINGERPRINT="google/sailfish/sailfish:9/PQ3A.190505.001/5373320:user/release-keys"
-BUILD_THUMBPRINT="9/PQ3A.190505.001/5373320:user/release-keys"
+BUILD_FINGERPRINT="google/sailfish/sailfish:9/PQ3A.190605.003/5524043:user/release-keys"
+BUILD_THUMBPRINT="9/PQ3A.190605.003/5524043:user/release-keys"
 
 # Copy device specific prebuilt files.
 PRODUCT_COPY_FILES += \
