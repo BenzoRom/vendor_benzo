@@ -6,6 +6,8 @@ include vendor/benzo/config/art.mk
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    bash \
+    bashrc \
     Browser \
     OmniJaws \
     SubstratumSignature \
@@ -22,7 +24,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.actionable_compatible_property.enabled=false \
     ro.com.android.prov_mobiledata=false \
     debug.performance.tuning=1 \
-    keyguard.no_require_sim=true
+    keyguard.no_require_sim=true \
+    persist.sys.strictmode.disable=true
 #DL Audio
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     aaudio.dl_scheduler=true
@@ -40,12 +43,15 @@ PRODUCT_COPY_FILES += \
     vendor/benzo/prebuilt/lib64/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_latinimegoogle.so
 
 # Use ccache
-USE_CCACHE := true
+export USE_CCACHE := true
 # ThinLTO cache
-USE_THINLTO_CACHE := true
+export USE_THINLTO_CACHE := true
 
 # SystemUITests
-EXCLUDE_SYSTEMUI_TESTS := true
+export EXCLUDE_SYSTEMUI_TESTS := true
+# LLVM Tests
+export SKIP_LLVM_TESTS := true
+export ART_ANDROID_COMMON_TEST_MK := false
 
 # Inherit common product build prop overrides
 -include vendor/benzo/config/versions.mk
