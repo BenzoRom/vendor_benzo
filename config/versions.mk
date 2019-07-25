@@ -16,7 +16,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.benzo.version=$(ROM_VERSION)
 
 # DragonTC info
-DRAGONTC_VERSION := 9.0
+DRAGONTC_VERSION := 10.0
 
 DTC_PATH := prebuilts/clang/host/linux-x86/$(DRAGONTC_VERSION)
 DTC_VER := $(shell cat $(DTC_PATH)/VERSION)
