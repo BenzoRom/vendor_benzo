@@ -2,6 +2,15 @@
 #
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
+# Google fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    FontArbutusSourceOverlay \
+    FontArvoLatoOverlay \
+    FontRubikRubikOverlay \
+    FontGoogleSansLatoOverlay \
+    FontGoogleSansOverlay
+
 # Use ccache
 USE_CCACHE := true
 ifeq ($(filter-out true,$(USE_CCACHE)),)
