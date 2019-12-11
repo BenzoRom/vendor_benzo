@@ -9,7 +9,8 @@ PRODUCT_PACKAGES += \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
     FontGoogleSansLatoOverlay \
-    FontGoogleSansOverlay
+    FontGoogleSansOverlay \
+    FontNunitoSansOverlay
 
 # Use ccache
 USE_CCACHE := true
