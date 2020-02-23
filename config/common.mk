@@ -4,9 +4,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    libjni_latinimegoogle \
-    OmniJaws \
-    WeatherIcons
+    libjni_latinimegoogle
 
 # Props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
