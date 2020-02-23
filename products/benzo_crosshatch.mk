@@ -24,7 +24,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT="google/crosshatch/crosshatch:10/QQ1A.200205.002/6084386:user/release-keys"
 BUILD_THUMBPRINT="10/QQ1A.200205.002/6084386:user/release-keys"
-
-# Copy device specific prebuilt files.
-PRODUCT_COPY_FILES += \
-    vendor/benzo/prebuilt/product/etc/apns-full-conf.xml:product/etc/apns-conf.xml
