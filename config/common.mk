@@ -52,3 +52,11 @@ PRODUCT_PACKAGES += \
 
 # Use ccache
 USE_CCACHE := true
+USE_SYSTEM_CCACHE := true
+ifeq ($(filter-out true,$(USE_CCACHE)),)
+  ifeq ($(filter-out true,$(USE_SYSTEM_CCACHE)),)
+    CCACHE_EXEC := $(shell which ccache)
+  else
+    CCACHE_EXEC := prebuilts/build-tools/linux-x86/bin/ccache
+  endif
+endif
