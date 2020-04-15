@@ -2,17 +2,20 @@
 
 # Packages to get profiles for
 packages="
-com.android.chrome
+com.chrome.beta
 com.android.vending
 com.google.android.apps.messaging
+com.google.android.apps.turbo
 com.google.android.calculator
 com.google.android.calendar
 com.google.android.contacts
 com.google.android.deskclock
 com.google.android.dialer
 com.google.android.gm
+com.google.android.gms
 com.google.android.googlequicksearchbox
 com.google.android.GoogleCamera
+com.google.android.settings.intelligence
 "
 
 # Get the profiles
