@@ -4,6 +4,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    ANGLEPrebuilt \
     libjni_latinimegoogle
 
 # Props
