@@ -35,7 +35,7 @@ PRODUCT_DEVICE := crosshatch
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
-    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ2A.200405.005 6254899 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 10 QQ2A.200501.001.B2 6352890 release-keys"
 
-BUILD_FINGERPRINT="google/crosshatch/crosshatch:10/QQ2A.200405.005/6254899:user/release-keys"
-BUILD_THUMBPRINT="10/QQ2A.200405.005/6254899:user/release-keys"
+BUILD_FINGERPRINT="google/crosshatch/crosshatch:10/QQ2A.200501.001.B2/6352890:user/release-keys"
+BUILD_THUMBPRINT="10/QQ2A.200501.001.B2/6352890:user/release-keys"
