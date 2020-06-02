@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_button_all_caps">false</bool>
+    <bool name="config_default_show_device_root">true</bool>
+    <string name="config_fontFamily">google-sans</string>
+    <string name="config_fontFamilyMedium">google-sans-medium</string>
+    <string name="default_root_uri">content://com.android.externalstorage.documents/root/primary</string>
+    <bool name="feature_default_root_in_browse">true</bool>
+    <bool name="feature_job_progress_dialog">true</bool>
+    <bool name="is_launcher_enabled">true</bool>
+    <string name="preferred_root_package">com.google.android</string>
+    <bool name="show_search_bar">true</bool>
+    <bool name="show_documents_root">true</bool>
+    <string name="trusted_quick_viewer_package">com.google.android.apps.docs</string>
+</resources>

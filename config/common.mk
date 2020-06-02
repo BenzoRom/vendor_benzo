@@ -11,6 +11,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.selinux=1
 
+# Overlay packages
+PRODUCT_PACKAGES += \
+    PixelDocumentsUIGoogleOverlay
+
 # Google fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
