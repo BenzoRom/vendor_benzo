@@ -2,6 +2,10 @@
 #
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
+# Packages/Overlays
+PRODUCT_PACKAGES += \
+    PixelDocumentsUIGoogleOverlay
+
 # Google fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
