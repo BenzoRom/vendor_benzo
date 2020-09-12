@@ -22,6 +22,8 @@ TARGET_DEVICE := crosshatch
 $(call inherit-product, vendor/benzo/config/common_full_phone.mk)
 # Inherit device tree configuration
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
+# Inherit Google App configuration
+$(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
