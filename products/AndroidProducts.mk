@@ -14,9 +14,13 @@
 # limitations under the License.
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/benzo_crosshatch.mk
+    $(LOCAL_DIR)/benzo_crosshatch.mk \
+    $(LOCAL_DIR)/benzo_bramble.mk
 
 COMMON_LUNCH_CHOICES := \
     benzo_crosshatch-userdebug \
     benzo_crosshatch-user \
-    benzo_crosshatch-eng
+    benzo_crosshatch-eng \
+    benzo_bramble-userdebug \
+    benzo_bramble-user \
+    benzo_bramble-eng
