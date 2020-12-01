@@ -29,12 +29,12 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_NAME := benzo_bramble
 PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 4a 5G
+PRODUCT_MODEL := Pixel 4a (5G)
 PRODUCT_MANUFACTURER := Google
 PRODUCT_DEVICE := bramble
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=redfin \
+    PRODUCT_NAME=bramble \
     PRIVATE_BUILD_DESC="bramble-user 11 RD1A.201105.003.C1 6886399 release-keys"
 
 BUILD_FINGERPRINT="google/bramble/bramble:11/RD1A.201105.003.C1/6886399:user/release-keys"
