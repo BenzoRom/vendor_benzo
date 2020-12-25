@@ -18,6 +18,7 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_PACKAGE_NAME := PixelDocumentsUIGoogleOverlay
+LOCAL_RRO_THEME := PixelDocumentsUIGoogleOverlay
 LOCAL_MODULE_TAGS := optional
 LOCAL_PRODUCT_MODULE := true
 LOCAL_CERTIFICATE := platform
