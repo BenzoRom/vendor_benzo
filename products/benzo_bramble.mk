@@ -14,12 +14,10 @@
 # limitations under the License.
 #
 
-# Release name
-PRODUCT_RELEASE_NAME := Pixel4a5G
 TARGET_DEVICE := bramble
 
 # Inherit Benzo common setup.
-$(call inherit-product, vendor/benzo/config/common_full_phone.mk)
+$(call inherit-product, vendor/benzo/config/common.mk)
 # Inherit device tree configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
 # Inherit Google App configuration

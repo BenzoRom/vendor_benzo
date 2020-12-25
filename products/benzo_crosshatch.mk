@@ -15,11 +15,10 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := Pixel3XL
 TARGET_DEVICE := crosshatch
 
 # Inherit Benzo common setup.
-$(call inherit-product, vendor/benzo/config/common_full_phone.mk)
+$(call inherit-product, vendor/benzo/config/common.mk)
 # Inherit device tree configuration
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 # Inherit Google App configuration
