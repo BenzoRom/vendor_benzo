@@ -3,6 +3,10 @@ prebuilt_etc {
     src: "fonts_customization.xml",
     required: [
         "ArbutusSlab-Regular.ttf",
+        "Arvo-Regular.ttf",
+        "Arvo-Italic.ttf",
+        "Arvo-Bold.ttf",
+        "Arvo-BoldItalic.ttf",
         "Barlow-Bold.ttf",
         "Barlow-Medium.ttf",
         "BigShouldersText-Bold.ttf",

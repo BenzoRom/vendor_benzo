@@ -69,4 +69,13 @@
   </family>
   <alias name="barlow-bold" to="barlow" weight="700"/>
   <alias name="barlow-medium" to="barlow" weight="500"/>
+
+  <family customizationType="new-named-family" name="nunito-sans">
+    <font weight="400" style="normal">NunitoSans-Regular.ttf</font>
+    <font weight="400" style="italic">NunitoSans-Italic.ttf</font>
+    <font weight="600" style="normal">NunitoSans-SemiBold.ttf</font>
+    <font weight="600" style="italic">NunitoSans-SemiBoldItalic.ttf</font>
+    <font weight="700" style="normal">NunitoSans-Bold.ttf</font>
+    <font weight="700" style="italic">NunitoSans-BoldItalic.ttf</font>
+  </family>
 </fonts-modification>
