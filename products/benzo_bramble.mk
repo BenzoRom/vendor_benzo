@@ -24,6 +24,7 @@ $(call inherit-product, device/google/bramble/aosp_bramble.mk)
 $(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_ENFORCE_VINTF_MANIFEST := false
 
 PRODUCT_NAME := benzo_bramble
 PRODUCT_BRAND := google
@@ -33,7 +34,7 @@ PRODUCT_DEVICE := bramble
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bramble \
-    PRIVATE_BUILD_DESC="bramble-user 11 RQ1C.210205.006 7047959 release-keys"
+    PRIVATE_BUILD_DESC="bramble-user 11 RQ2A.210305.006 7119741 release-keys"
 
-BUILD_FINGERPRINT="google/bramble/bramble:11/RQ1C.210205.006/7047959:user/release-keys"
-BUILD_THUMBPRINT="11/RQ1C.210205.006/7047959:user/release-keys"
+BUILD_FINGERPRINT="google/bramble/bramble:11/RQ2A.210305.006/7119741:user/release-keys"
+BUILD_THUMBPRINT="11/RQ2A.210305.006/7119741:user/release-keys"
