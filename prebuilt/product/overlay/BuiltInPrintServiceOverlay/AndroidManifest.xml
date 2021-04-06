@@ -14,12 +14,9 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.overlay.bips"
-        android:versionCode="1"
-        android:versionName="1.0">
-    <overlay
-        android:targetPackage="com.android.bips"
-        android:priority="1"/>
-
-    <application android:label="BuiltInPrintService" android:hasCode="false"/>
+    package="com.android.bips.overlay">
+    <application android:hasCode="false" />
+    <overlay android:targetPackage="com.android.bips"
+             android:isStatic="true"
+             android:priority="1"/>
 </manifest>
