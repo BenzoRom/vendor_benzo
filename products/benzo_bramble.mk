@@ -34,7 +34,7 @@ PRODUCT_DEVICE := bramble
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bramble \
-    PRIVATE_BUILD_DESC="bramble-user 11 RQ2A.210505.003 7255357 release-keys"
+    PRIVATE_BUILD_DESC="bramble-user 11 RQ3A.210605.005 7349499 release-keys"
 
-BUILD_FINGERPRINT="google/bramble/bramble:11/RQ2A.210505.003/7255357:user/release-keys"
-BUILD_THUMBPRINT="11/RQ2A.210505.003/7255357:user/release-keys"
+BUILD_FINGERPRINT="google/bramble/bramble:11/RQ3A.210605.005/7349499:user/release-keys"
+BUILD_THUMBPRINT="11/RQ3A.210605.005/7349499:user/release-keys"
