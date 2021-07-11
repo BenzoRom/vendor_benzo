@@ -1,71 +1,113 @@
+// Copyright (C) 2021 Benzo Rom
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 prebuilt_font {
-	name: "GoogleSans-BoldItalic.ttf",
-	src: "GoogleSans-BoldItalic.ttf",
-	product_specific: true,
+    name: "Arvo-Bold-product.ttf",
+    src: "Arvo-Bold.ttf",
+    filename_from_src: true,
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "GoogleSans-Bold.ttf",
-	src: "GoogleSans-Bold.ttf",
-	product_specific: true,
+    name: "Arvo-BoldItalic-product.ttf",
+    src: "Arvo-BoldItalic.ttf",
+    filename_from_src: true,
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "GoogleSans-Italic.ttf",
-	src: "GoogleSans-Italic.ttf",
-	product_specific: true,
+    name: "Arvo-Italic-product.ttf",
+    src: "Arvo-Italic.ttf",
+    filename_from_src: true,
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "GoogleSans-MediumItalic.ttf",
-	src: "GoogleSans-MediumItalic.ttf",
-	product_specific: true,
+    name: "Arvo-Regular-product.ttf",
+    src: "Arvo-Regular.ttf",
+    filename_from_src: true,
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "GoogleSans-Medium.ttf",
-	src: "GoogleSans-Medium.ttf",
-	product_specific: true,
+    name: "GoogleSans-Bold.ttf",
+    src: "GoogleSans-Bold.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "GoogleSans-Regular.ttf",
-	src: "GoogleSans-Regular.ttf",
-	product_specific: true,
+    name: "GoogleSans-BoldItalic.ttf",
+    src: "GoogleSans-BoldItalic.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-BoldItalic.ttf",
-	src: "NunitoSans-BoldItalic.ttf",
-	product_specific: true,
+    name: "GoogleSans-Italic.ttf",
+    src: "GoogleSans-Italic.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-Bold.ttf",
-	src: "NunitoSans-Bold.ttf",
-	product_specific: true,
+    name: "GoogleSans-Medium.ttf",
+    src: "GoogleSans-Medium.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-Italic.ttf",
-	src: "NunitoSans-Italic.ttf",
-	product_specific: true,
+    name: "GoogleSans-MediumItalic.ttf",
+    src: "GoogleSans-MediumItalic.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-Regular.ttf",
-	src: "NunitoSans-Regular.ttf",
-	product_specific: true,
+    name: "GoogleSans-Regular.ttf",
+    src: "GoogleSans-Regular.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-SemiBoldItalic.ttf",
-	src: "NunitoSans-SemiBoldItalic.ttf",
-	product_specific: true,
+    name: "NunitoSans-Bold.ttf",
+    src: "NunitoSans-Bold.ttf",
+    product_specific: true,
 }
 
 prebuilt_font {
-	name: "NunitoSans-SemiBold.ttf",
-	src: "NunitoSans-SemiBold.ttf",
-	product_specific: true,
+    name: "NunitoSans-BoldItalic.ttf",
+    src: "NunitoSans-BoldItalic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "NunitoSans-Italic.ttf",
+    src: "NunitoSans-Italic.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "NunitoSans-Regular.ttf",
+    src: "NunitoSans-Regular.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "NunitoSans-SemiBold.ttf",
+    src: "NunitoSans-SemiBold.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "NunitoSans-SemiBoldItalic.ttf",
+    src: "NunitoSans-SemiBoldItalic.ttf",
+    product_specific: true,
 }
