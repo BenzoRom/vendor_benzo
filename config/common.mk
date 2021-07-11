@@ -12,11 +12,6 @@ PRODUCT_PACKAGES += \
     BuiltInPrintServiceOverlay \
     PixelDocumentsUIGoogleOverlay
 
-# Telephony packages
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Stk
-
 # Google fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
