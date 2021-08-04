@@ -1,8 +1,16 @@
-# Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=RQ3A.210705.001 BUILD_ID=RQ3A.210705.001 BUILD_VERSION_TAGS=release-keys BUILD_UTC_DATE=0
+# Build ID
+BUILDID := RQ3A.210805.001.A1
 
+# Build prop overrides
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_DISPLAY_ID=$(BUILDID) \
+    BUILD_ID=$(BUILDID) \
+    BUILD_VERSION_TAGS=release-keys
+
+# Android version
 ANDROID_NAME := android11
 
+# Benzo versions
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
 ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
 BENZO_VERSION := $(ROM_VERSION)
@@ -10,7 +18,7 @@ BENZO_VERSION := $(ROM_VERSION)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.benzo.version=$(ROM_VERSION)
 
-# Clang version
+# Clang versions
 CUSTOM_CLANG_VERSION := clang-benzo
 CUSTOM_CLANG_SHORT_VERSION := 13.0.0
 
