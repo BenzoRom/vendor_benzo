@@ -3,25 +3,25 @@
 # Get current path
 current_path=$(eval pwd)
 
-# Check for aapt2
-aapt2_temp_path=$(eval which aapt2)
-if [ "$aapt2_temp_path" == "" ]; then
+# Check for aapt
+aapt_temp_path=$(eval which aapt)
+if [ "$aapt_temp_path" == "" ]; then
   echo ""
-  echo "ERROR: aapt2 not found. Please add the binary to your path."
+  echo "ERROR: aapt not found. Please add the binary to your path."
   echo "ERROR: If you don't have the AndroidSDK, the binary can be found at"
-  echo "ERROR: prebuilts/sdk/tools/linux/bin/aapt2 in and AOSP/Rom checkout."
+  echo "ERROR: prebuilts/sdk/tools/linux/bin/aapt in and AOSP/Rom checkout."
   exit 0
 fi
-aapt2_path=$aapt2_temp_path
+aapt_path=$aapt_temp_path
 
 show_help() {
   echo 'Usage:'
   echo ''
-  echo "`basename $0`"
-  echo ' -Search for apks recursively in current path and print permissions'
+  echo 'Search for apks recursively in current path and print permissions'
+  echo "Example: ./`basename $0`"
   echo ''
-  echo "`basename $0` [path]"
-  echo ' -Search for apks recursively in specified path and print permissions'
+  echo 'Search for apks recursively in specified path and print permissions'
+  echo "Example: ./`basename $0` [path]"
 }
 
 print_header() {
@@ -51,7 +51,7 @@ print_footer() {
 
 get_apk_permissions() {
   # Get each permission and write
-  apk_permissions=$(eval "$aapt2_path dump permissions $1 | grep uses-permission | sed 's/uses-permission: name=//' | sed 's/uses-permission-sdk-23: name=//' | sort | sed s/\'//g")
+  apk_permissions=$(eval $aapt_path dump permissions $1 | grep uses-permission | sed -e "s/.*uses-permission-sdk-23: name='//" -e "s/' .*//" | sed -e "s/.*uses-permission: name='//" -e "s/' .*//" | sort| sed s/\'//g)
   for permission in $apk_permissions; do
     # Remove maxSdkVersion lines
     search_for_sdk_permissions=$(eval 'echo $permission | grep "maxSdkVersion"')
@@ -66,8 +66,8 @@ get_permissions() {
   # Get list of apks in alphabetical order
   packages=$(eval 'find $1 -name '*.apk' -print | sort')
   for packageName in $packages; do
-    # Get permissions from aapt2
-    app_package_name=$(eval '$aapt2_path dump packagename $packageName')
+    # Get permissions from aapt
+    app_package_name=$(eval $aapt_path dump badging $packageName | grep "package: name=" | sed -e "s/.*package: name='//" -e "s/' .*//")
     # Write app name and then permissions
     echo "    <privapp-permissions package=\"$app_package_name\">"
     get_apk_permissions $packageName
