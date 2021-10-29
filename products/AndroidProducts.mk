@@ -13,9 +13,13 @@
 # limitations under the License.
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/benzo_bramble.mk
+    $(LOCAL_DIR)/benzo_bramble.mk \
+    $(LOCAL_DIR)/benzo_oriole.mk
 
 COMMON_LUNCH_CHOICES := \
     benzo_bramble-userdebug \
     benzo_bramble-user \
-    benzo_bramble-eng
+    benzo_bramble-eng \
+    benzo_oriole-userdebug \
+    benzo_oriole-user \
+    benzo_oriole-eng
