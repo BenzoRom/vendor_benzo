@@ -25,6 +25,7 @@ $(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_ENFORCE_VINTF_MANIFEST := false
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 PRODUCT_NAME := benzo_oriole
 PRODUCT_BRAND := google
@@ -34,7 +35,7 @@ PRODUCT_DEVICE := oriole
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=oriole \
-    PRIVATE_BUILD_DESC="oriole-user 12 SD1A.210817.015.A4 7697517 release-keys"
+    PRIVATE_BUILD_DESC="oriole-user 12 SD1A.210817.036 7805805 release-keys"
 
-BUILD_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.015.A4/7697517:user/release-keys"
-BUILD_THUMBPRINT="12/SD1A.210817.015.A4/7697517:user/release-keys"
+BUILD_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.036/7805805:user/release-keys"
+BUILD_THUMBPRINT="12/SD1A.210817.036/7805805:user/release-keys"
