@@ -16,9 +16,9 @@
 
 BENZO_DEVICE := oriole
 BENZO_MODEL := Pixel 6
-BENZO_BUILD_DESC="oriole-user 12 SD1A.210817.036 7805805 release-keys"
-BENZO_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.036/7805805:user/release-keys"
-BENZO_THUMBPRINT="12/SD1A.210817.036/7805805:user/release-keys"
+BENZO_BUILD_DESC="oriole-user 12 SD1A.210817.037 7862242 release-keys"
+BENZO_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.037/7862242:user/release-keys"
+BENZO_THUMBPRINT="12/SD1A.210817.037/7862242:user/release-keys"
 
 TARGET_DEVICE := $(BENZO_DEVICE)
 
