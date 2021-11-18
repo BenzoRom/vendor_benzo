@@ -8,7 +8,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_VERSION_TAGS=release-keys
 
 # Android version
-ANDROID_NAME := android11
+ANDROID_NAME := android12
 
 # Benzo versions
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
