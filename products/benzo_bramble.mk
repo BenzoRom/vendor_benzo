@@ -14,27 +14,17 @@
 # limitations under the License.
 #
 
-TARGET_DEVICE := bramble
+BENZO_DEVICE := bramble
+BENZO_MODEL := Pixel 4a (5G)
+BENZO_BUILD_DESC="bramble-user 12 RQ3A.210905.001 7671067 release-keys"
+BENZO_FINGERPRINT="google/bramble/bramble:12/RQ3A.210905.001/7671067:user/release-keys"
+BENZO_THUMBPRINT="12/RQ3A.210905.001/7671067:user/release-keys"
 
-# Inherit Benzo common setup.
+TARGET_DEVICE := $(BENZO_DEVICE)
+
+# Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
-# Inherit device tree configuration
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
-# Inherit Google App configuration
 $(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
 
-PRODUCT_RESTRICT_VENDOR_FILES := false
-PRODUCT_ENFORCE_VINTF_MANIFEST := false
-
-PRODUCT_NAME := benzo_bramble
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 4a (5G)
-PRODUCT_MANUFACTURER := Google
-PRODUCT_DEVICE := bramble
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bramble \
-    PRIVATE_BUILD_DESC="bramble-user 12 RQ3A.210905.001 7671067 release-keys"
-
-BUILD_FINGERPRINT="google/bramble/bramble:12/RQ3A.210905.001/7671067:user/release-keys"
-BUILD_THUMBPRINT="12/RQ3A.210905.001/7671067:user/release-keys"
+include vendor/benzo/products/device_common.mk

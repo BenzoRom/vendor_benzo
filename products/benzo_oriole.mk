@@ -14,28 +14,17 @@
 # limitations under the License.
 #
 
-TARGET_DEVICE := oriole
+BENZO_DEVICE := oriole
+BENZO_MODEL := Pixel 6
+BENZO_BUILD_DESC="oriole-user 12 SD1A.210817.036 7805805 release-keys"
+BENZO_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.036/7805805:user/release-keys"
+BENZO_THUMBPRINT="12/SD1A.210817.036/7805805:user/release-keys"
 
-# Inherit Benzo common setup.
+TARGET_DEVICE := $(BENZO_DEVICE)
+
+# Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
-# Inherit device tree configuration
 $(call inherit-product, device/google/raviole/aosp_oriole.mk)
-# Inherit Google App configuration
 $(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
 
-PRODUCT_RESTRICT_VENDOR_FILES := false
-PRODUCT_ENFORCE_VINTF_MANIFEST := false
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
-PRODUCT_NAME := benzo_oriole
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Pixel 6
-PRODUCT_MANUFACTURER := Google
-PRODUCT_DEVICE := oriole
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=oriole \
-    PRIVATE_BUILD_DESC="oriole-user 12 SD1A.210817.036 7805805 release-keys"
-
-BUILD_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.036/7805805:user/release-keys"
-BUILD_THUMBPRINT="12/SD1A.210817.036/7805805:user/release-keys"
+include vendor/benzo/products/device_common.mk

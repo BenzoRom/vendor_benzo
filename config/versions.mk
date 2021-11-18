@@ -12,7 +12,7 @@ ANDROID_NAME := android11
 
 # Benzo versions
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
-ROM_VERSION := $(ROM_DATE)-$(TARGET_DEVICE)
+ROM_VERSION := $(ROM_DATE)-$(BENZO_DEVICE)
 BENZO_VERSION := $(ROM_VERSION)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
