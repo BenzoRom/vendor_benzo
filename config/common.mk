@@ -1,4 +1,4 @@
-# Benzo Rom 
+# Benzo Rom
 #
 # Inherit art options
 $(call inherit-product, vendor/benzo/config/art.mk)
@@ -8,7 +8,9 @@ $(call inherit-product, vendor/benzo/config/versions.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
 PRODUCT_PACKAGES += \
-    fonts_customization.xml
+    fonts_customization.xml \
+    SafetyRegulatoryInfo \
+    QuickAccessWallet
 
 # Enable tethering
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
