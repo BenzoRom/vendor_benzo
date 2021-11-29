@@ -20,8 +20,6 @@ BENZO_BUILD_DESC="oriole-user 12 SD1A.210817.037 7862242 release-keys"
 BENZO_FINGERPRINT="google/oriole/oriole:12/SD1A.210817.037/7862242:user/release-keys"
 BENZO_THUMBPRINT="12/SD1A.210817.037/7862242:user/release-keys"
 
-TARGET_DEVICE := $(BENZO_DEVICE)
-
 # Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
 $(call inherit-product, device/google/raviole/aosp_oriole.mk)

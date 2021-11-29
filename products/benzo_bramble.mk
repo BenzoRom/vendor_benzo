@@ -20,8 +20,6 @@ BENZO_BUILD_DESC="bramble-user 12 RQ3A.210905.001 7671067 release-keys"
 BENZO_FINGERPRINT="google/bramble/bramble:12/RQ3A.210905.001/7671067:user/release-keys"
 BENZO_THUMBPRINT="12/RQ3A.210905.001/7671067:user/release-keys"
 
-TARGET_DEVICE := $(BENZO_DEVICE)
-
 # Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
 $(call inherit-product, device/google/bramble/aosp_bramble.mk)
