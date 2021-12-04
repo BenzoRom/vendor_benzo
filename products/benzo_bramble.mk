@@ -16,9 +16,9 @@
 
 BENZO_DEVICE := bramble
 BENZO_MODEL := Pixel 4a (5G)
-BENZO_BUILD_DESC="bramble-user 12 RQ3A.210905.001 7671067 release-keys"
-BENZO_FINGERPRINT="google/bramble/bramble:12/RQ3A.210905.001/7671067:user/release-keys"
-BENZO_THUMBPRINT="12/RQ3A.210905.001/7671067:user/release-keys"
+BENZO_BUILD_DESC := "bramble-user 12 RQ3A.210905.001 7671067 release-keys"
+BENZO_FINGERPRINT := "google/bramble/bramble:12/RQ3A.210905.001/7671067:user/release-keys"
+BENZO_THUMBPRINT := "12/RQ3A.210905.001/7671067:user/release-keys"
 
 # Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
