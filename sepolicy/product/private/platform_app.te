@@ -1,0 +1,5 @@
+typeattribute platform_app coredomain;
+
+# Wallpapers: persist.bootanim.color1-color4
+get_prop(platform_app, bootanim_system_prop)
+set_prop(platform_app, bootanim_system_prop)
