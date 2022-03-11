@@ -1,5 +1,5 @@
 # Build ID
-BUILDID := SQ1D.220205.003
+BUILDID := SP2A.220305.012
 
 # Build prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -8,7 +8,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_VERSION_TAGS=release-keys
 
 # Android version
-ANDROID_NAME := android12
+ANDROID_NAME := android12L
 
 # Benzo versions
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
