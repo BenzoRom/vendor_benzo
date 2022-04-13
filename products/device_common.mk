@@ -26,3 +26,6 @@ BUILD_THUMBPRINT := $(BENZO_THUMBPRINT)
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     vendor/benzo/sepolicy/product/private
+
+BOARD_SEPOLICY_DIRS += \
+    hardware/google/pixel-sepolicy/input
