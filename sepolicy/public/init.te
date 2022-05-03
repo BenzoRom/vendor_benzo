@@ -1,0 +1,1 @@
+allowxperm init system_data_root_file:dir ioctl F2FS_IOC_SHUTDOWN;
