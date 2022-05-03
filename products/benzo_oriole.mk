@@ -16,9 +16,9 @@
 
 BENZO_DEVICE := oriole
 BENZO_MODEL := Pixel 6
-BENZO_BUILD_DESC := "oriole-user 12 SP2A.220405.004 8233519 release-keys"
-BENZO_FINGERPRINT := "google/oriole/oriole:12/SP2A.220405.004/8233519:user/release-keys"
-BENZO_THUMBPRINT := "12/SP2A.220405.004/8233519:user/release-keys"
+BENZO_BUILD_DESC := "oriole-user 12 SP2A.220505.002 8353555 release-keys"
+BENZO_FINGERPRINT := "google/oriole/oriole:12/SP2A.220505.002/8353555:user/release-keys"
+BENZO_THUMBPRINT := "12/SP2A.220505.002/8353555:user/release-keys"
 
 # Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
