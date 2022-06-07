@@ -24,8 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := $(BENZO_FINGERPRINT)
 BUILD_THUMBPRINT := $(BENZO_THUMBPRINT)
 
-PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    vendor/benzo/sepolicy/product/private
-
-BOARD_SEPOLICY_DIRS += \
-    hardware/google/pixel-sepolicy/input
+PLAT_PRIVATE_POLICY += vendor/benzo/sepolicy/private
+PLAT_PUBLIC_POLICY += vendor/benzo/sepolicy/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS += vendor/benzo/sepolicy/product/private
+BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/input

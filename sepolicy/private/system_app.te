@@ -1,0 +1,1 @@
+allow system_app apk_data_file:dir rw_dir_perms;
