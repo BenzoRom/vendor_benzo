@@ -1,0 +1,10 @@
+recovery_only(`
+  userdebug_or_eng(`
+    # popen(/system/bin/dmesg) and associated permissions. We only allow this
+    # on unlocked devices running userdebug builds.
+    allow fastbootd rootfs:file execute_no_trans;
+    allow fastbootd system_file:file execute_no_trans;
+    allow fastbootd kmsg_device:chr_file read;
+    allow fastbootd kernel:system syslog_read;
+  ')
+')
