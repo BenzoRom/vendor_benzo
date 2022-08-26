@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.dun.override=0
 
+# Bash
+PRODUCT_PACKAGES += \
+    bash
+
 # Use ccache
 USE_CCACHE := false
 ifeq ($(filter-out true,$(USE_CCACHE)),)
