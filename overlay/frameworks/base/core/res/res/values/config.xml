@@ -26,4 +26,8 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
     </string-array>
 
+    <!-- Google Sans -->
+    <string name="config_headlineFontFamily" translatable="false">google-sans</string>
+    <string name="config_headlineFontFamilyMedium" translateable="false">google-sans-medium</string>
+
 </resources>
