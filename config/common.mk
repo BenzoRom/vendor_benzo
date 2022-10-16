@@ -7,6 +7,10 @@ $(call inherit-product, vendor/benzo/config/versions.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
+# Build SystemUI replacement
+PRODUCT_PACKAGES += \
+    SystemUIGoogle
+
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
     SafetyRegulatoryInfo \
