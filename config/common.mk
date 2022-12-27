@@ -9,6 +9,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/benzo/overlay
 
 # Build SystemUI replacement
 PRODUCT_PACKAGES += \
+    SettingsGoogle \
     SystemUIGoogle
 
 PRODUCT_PACKAGES += \
