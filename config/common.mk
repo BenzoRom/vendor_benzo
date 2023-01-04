@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
     SafetyRegulatoryInfo \
+    SettingsGoogleFutureFaceEnroll \
     QuickAccessWallet
 
 # Enable tethering
