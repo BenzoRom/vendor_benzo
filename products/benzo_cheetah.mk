@@ -16,9 +16,9 @@
 
 BENZO_DEVICE := cheetah
 BENZO_MODEL := Pixel 7 Pro
-BENZO_BUILD_DESC := "cheetah-user 13 TQ2A.230405.003.E1 9802792 release-keys"
-BENZO_FINGERPRINT := "google/cheetah/cheetah:13/TQ2A.230405.003.E1/9802792:user/release-keys"
-BENZO_THUMBPRINT := "13/TQ2A.230405.003.E1/9802792:user/release-keys"
+BENZO_BUILD_DESC := "cheetah-user 13 TQ2A.230505.002 9891397 release-keys"
+BENZO_FINGERPRINT := "google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys"
+BENZO_THUMBPRINT := "13/TQ2A.230505.002/9891397:user/release-keys"
 
 # Inherit Benzo/aosp device/google app configurations
 $(call inherit-product, vendor/benzo/config/common.mk)
